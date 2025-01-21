@@ -56,11 +56,11 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
 
 1. CREAR UN USUARIO:
     
-    **RUTA:** http://localhost:3000/api/user/signup
-    **METODO:** POST
-    **HEADERS:**
+    -**RUTA:** http://localhost:3000/api/user/signup
+    -**METODO:** POST
+    -**HEADERS:**
         -Key: Content-Type ---- Value: application/json
-    **BODY:**
+    -**BODY:**
     
     
     {
