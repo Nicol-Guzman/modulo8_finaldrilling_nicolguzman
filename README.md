@@ -27,7 +27,8 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
 2. Instala las dependencias del proyecto
     
     ```bash
-    npm install```
+    npm install
+    ```
 
 3. OPCIONAL: Si encuentra vulnerabilidades  te pide hacer un audit, sigue las instrucciones que te entrega npm por la consola.
     ```bash
