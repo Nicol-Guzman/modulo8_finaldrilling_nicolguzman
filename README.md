@@ -69,31 +69,32 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
     - **BODY:**
     
     
-    ```{
-            "firstName": "Mateo",
-            "lastName": "Díaz",
-            "email": "mateo.diaz@correo.com",
-            "password": "mateo123456"
-        },
-        {
-            "firstName": "Santiago",
-            "lastName": "Mejías",
-            "email": "santiago.mejias@correo.com",
-            "password": "santiago123456"
-        },
-        {
-            "firstName": "Lucas",
-            "lastName": "Rojas",
-            "email": "lucas.rojas@correo.com",
-            "password": "lucas123456"
-        },
-        {
-            "firstName": "Facundo",
-            "lastName": "Fernández",
-            "email": "facundo.fernandez@correo.com",
-            "password": "facundo123456"
-        }
-        ```
+    ```
+    {
+        "firstName": "Mateo",
+        "lastName": "Díaz",
+        "email": "mateo.diaz@correo.com",
+        "password": "mateo123456"
+    },
+    {
+        "firstName": "Santiago",
+        "lastName": "Mejías",
+        "email": "santiago.mejias@correo.com",
+        "password": "santiago123456"
+    },
+    {
+        "firstName": "Lucas",
+        "lastName": "Rojas",
+        "email": "lucas.rojas@correo.com",
+        "password": "lucas123456"
+    },
+    {
+        "firstName": "Facundo",
+        "lastName": "Fernández",
+        "email": "facundo.fernandez@correo.com",
+        "password": "facundo123456"
+    }
+    ```
 
 2. INICIAR SESION
 
@@ -104,7 +105,8 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
 
     La consola de POSTMAN debería mostrar algo como:
 
-    ```{
+    ```
+    {
         "id": 1,
         "email": "mateo.diaz@correo.com",
         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM3NDE3OTM4LCJleHAiOjE3Mzc1MDQzMzh9.hevWgRFrtuBQ71LkeM1Vh4-m_V1hLELL9FoPycQZltM"
@@ -136,7 +138,8 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
         - Key: x-access-token / Value: Aqui va el token que entrego el paso 2
     - **BODY:**
 
-    ```{
+    ```
+    {
         "title": "Introduciendo El Bootcamp de React",
         "cue": 10,
         "description": "React es la librería más usada en JavaScript para el desarrollo de interfaces"
@@ -162,7 +165,8 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
         - Key: x-access-token / Value: Aqui va el token que entrego el paso 2
     - **BODY:**
 
-    ```{
+    ```
+    {
         "bootcamp_id": 1,
         "user_id": 1
     },
@@ -229,7 +233,8 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
         - Key: x-access-token / Value: Aqui va el token que entrego el paso 2
     - **BODY:**
     
-    ```{
+    ```
+    {
         "firstName": "Pedro",
         "lastName": "Sánchez"
     }
