@@ -60,7 +60,7 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
 
 ## Pasos para usar servidor con POSTMAN
 
-1. CREAR UN USUARIO:
+1. **CREAR UN USUARIO:**
     
     - **RUTA:** http://localhost:3000/api/user/signup
     - **METODO:** POST
@@ -96,7 +96,7 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
     }
     ```
 
-2. INICIAR SESION
+2. **INICIAR SESION**
 
     - **RUTA:** http://localhost:3000/api/user/signin
     - **METODO:** POST
@@ -113,7 +113,7 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
     }
     ```
 
-3. OBTENE UN USUARIO POR ID
+3. **OBTENE UN USUARIO POR ID**
 
     Puedes cambiar el numero al final de la ruta para acceder a los datos de otros usuarios o para testear el lanzamiento de errores al colocar un id que no existe.
     
@@ -122,14 +122,14 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
     - **HEADERS:**
         - Key: x-access-token / Value: Aqui va el token que entrego el paso 2
     
-4. OBTENER TODOS LOS USUARIOS
+4. **OBTENER TODOS LOS USUARIOS**
 
     - **RUTA:** http://localhost:3000/api/user
     - **METODO:** GET
     - **HEADERS:**
         - Key: x-access-token / Value: Aqui va el token que entrego el paso 2
 
-5. CREAR UN BOOTCAMP
+5. **CREAR UN BOOTCAMP**
 
     - **RUTA:** http://localhost:3000/api/bootcamp
     - **METODO:** POST
@@ -156,7 +156,7 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
     }
     ```
 
-6. AGREGAR USUARIOS AL BOOTCAMP
+6. **AGREGAR USUARIOS AL BOOTCAMP**
 
     - **RUTA:** http://localhost:3000/api/bootcamp/adduser
     - **METODO:** POST
@@ -192,7 +192,7 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
     }
     ```
 
-7. OBTENER UN BOOTCAMP POR ID CON LOS USUARIOS ASOCIADOS A EL
+7. **OBTENER UN BOOTCAMP POR ID CON LOS USUARIOS ASOCIADOS A EL**
 
     Puedes cambiar el numero al final de la ruta para acceder a los datos de otros bootcamps o para testear el lanzamiento de errores al colocar un id que no existe.
 
@@ -201,14 +201,14 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
     - **HEADERS:**
         - Key: x-access-token / Value: Aqui va el token que entrego el paso 2
     
-8. OBTENER TODOS LOS BOOTCAMPS Y SUS USUARIOS ASOCIADOS
+8. **OBTENER TODOS LOS BOOTCAMPS Y SUS USUARIOS ASOCIADOS**
 
     - **RUTA:** http://localhost:3000/api/bootcamp
     - **METODO:** GET
     - **HEADERS:**
         - Key: x-access-token / Value: Aqui va el token que entrego el paso 2
 
-9. ACTUALIZAR UN USUARIO POR ID
+9. **ACTUALIZAR UN USUARIO POR ID**
 
     Puedes cambiar el numero al final de la ruta para modificar otro usuario existente.
 
@@ -218,12 +218,14 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
         - Key: x-access-token / Value: Aqui va el token que entrego el paso 2
     - **BODY:**
     
+    ```
     {
         "firstName": "Pedro",
         "lastName": "Sánchez"
     }
+    ```
 
-10. ELIMINAR UN USUARIO POR ID
+10. **ELIMINAR UN USUARIO POR ID**
 
     Puedes cambiar el numero al final de la ruta para eliminar otro usuario existente.
 
