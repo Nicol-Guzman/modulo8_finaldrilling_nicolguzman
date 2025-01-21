@@ -64,11 +64,11 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
 
 1. CREAR UN USUARIO:
     
-    **RUTA:** http://localhost:3000/api/user/signup
-    **METODO:** POST
-    **HEADERS:**
-        Key: Content-Type ---- Value: application/json
-    **BODY:**
+    **-RUTA:** http://localhost:3000/api/user/signup
+    **-METODO:** POST
+    **-HEADERS:**
+        -Key: Content-Type ---- Value: application/json
+    **-BODY:**
     ```
         {
             "firstName": "Mateo",
@@ -99,8 +99,8 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
 
 2. INICIAR SESION
 
-    **RUTA:** http://localhost:3000/api/user/signin
-    **METODO:** POST
+    **-RUTA:** http://localhost:3000/api/user/signin
+    **-METODO:** POST
     
     Al realizar el login, mantener abierta la pestaña, ya que el Token se usara para los pasos sub-siguientes.
 
@@ -118,27 +118,27 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
 
     Puedes cambiar el numero al final de la ruta para acceder a los datos de otros usuarios o para testear el lanzamiento de errores al colocar un id que no existe.
     
-    **RUTA:** http://localhost:3000/api/user/1
-    **METODO:** GET
-    **HEADERS:**
-        Key: x-access-token ---- Value: Aqui va el token que entrego el paso 2
+    **-RUTA:** http://localhost:3000/api/user/1
+    **-METODO:** GET
+    **-HEADERS:**
+        -Key: x-access-token ---- Value: Aqui va el token que entrego el paso 2
     
 4. OBTENER TODOS LOS USUARIOS
 
-    **RUTA:** http://localhost:3000/api/user
-    **METODO:** GET
-    **HEADERS:**
-        Key: x-access-token ---- Value: Aqui va el token que entrego el paso 2
+    **-RUTA:** http://localhost:3000/api/user
+    **-METODO:** GET
+    **-HEADERS:**
+        -Key: x-access-token ---- Value: Aqui va el token que entrego el paso 2
 
 
 5. CREAR UN BOOTCAMP
 
-    **RUTA:** http://localhost:3000/api/bootcamp
-    **METODO:** POST
-    **HEADERS:**
-        Key: Content-Type ---- Value: application/json
-        Key: x-access-token ---- Value: Aqui va el token que entrego el paso 2
-    **BODY:**
+    **-RUTA:** http://localhost:3000/api/bootcamp
+    **-METODO:** POST
+    **-HEADERS:**
+        -Key: Content-Type ---- Value: application/json
+        -Key: x-access-token ---- Value: Aqui va el token que entrego el paso 2
+    **-BODY:**
 
     ```
     {
@@ -160,12 +160,12 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
 
 6. AGREGAR USUARIOS AL BOOTCAMP
 
-    **RUTA:** http://localhost:3000/api/bootcamp/adduser
-    **METODO:** POST
-    **HEADERS:**
-        Key: Content-Type ---- Value: application/json
-        Key: x-access-token ---- Value: Aqui va el token que entrego el paso 2
-    **BODY:**
+    **-RUTA:** http://localhost:3000/api/bootcamp/adduser
+    **-METODO:** POST
+    **-HEADERS:**
+        -Key: Content-Type ---- Value: application/json
+        -Key: x-access-token ---- Value: Aqui va el token que entrego el paso 2
+    **-BODY:**
 
     ```
     {
@@ -198,27 +198,27 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
 
     Puedes cambiar el numero al final de la ruta para acceder a los datos de otros bootcamps o para testear el lanzamiento de errores al colocar un id que no existe.
 
-    **RUTA:** http://localhost:3000/api/bootcamp/1
-    **METODO:** GET
-    **HEADERS:**
-        Key: x-access-token ---- Value: Aqui va el token que entrego el paso 2
+    **-RUTA:** http://localhost:3000/api/bootcamp/1
+    **-METODO:** GET
+    **-HEADERS:**
+        -Key: x-access-token ---- Value: Aqui va el token que entrego el paso 2
     
 8. OBTENER TODOS LOS BOOTCAMPS Y SUS USUARIOS ASOCIADOS
 
-    **RUTA:** http://localhost:3000/api/bootcamp
-    **METODO:** GET
-    **HEADERS:**
-        Key: x-access-token ---- Value: Aqui va el token que entrego el paso 2
+    **-RUTA:** http://localhost:3000/api/bootcamp
+    **-METODO:** GET
+    **-HEADERS:**
+        -Key: x-access-token ---- Value: Aqui va el token que entrego el paso 2
 
 9. ACTUALIZAR UN USUARIO POR ID
 
     Puedes cambiar el numero al final de la ruta para modificar otro usuario existente.
 
-    **RUTA:** http://localhost:3000/api/user/1
-    **METODO:** PUT
-    **HEADERS:**
-        Key: x-access-token ---- Value: Aqui va el token que entrego el paso 2
-    **BODY:**
+    **-RUTA:** http://localhost:3000/api/user/1
+    **-METODO:** PUT
+    **-HEADERS:**
+        -Key: x-access-token ---- Value: Aqui va el token que entrego el paso 2
+    **-BODY:**
     
     ```
     {
@@ -231,11 +231,11 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
 
     Puedes cambiar el numero al final de la ruta para eliminar otro usuario existente.
 
-    **RUTA:** http://localhost:3000/api/user/1
-    **METODO:** DELETE
-    **HEADERS:**
-        Key: x-access-token ---- Value: Aqui va el token que entrego el paso 2
-    **BODY:**
+    **-RUTA:** http://localhost:3000/api/user/1
+    **-METODO:** DELETE
+    **-HEADERS:**
+        -Key: x-access-token ---- Value: Aqui va el token que entrego el paso 2
+    **-BODY:**
     
     ```
     {
