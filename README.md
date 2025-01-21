@@ -18,42 +18,38 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
 ## Instalación
 
 1- Clona el repositorio:
-
-   ```
+   `
    bash
    git clone https://github.com/Nicol-Guzman/modulo7_finaldrilling_nicolguzman.git
    cd modulo7_finaldrilling_nicolguzman
-   ```
-
+   `
 2- Instala las dependencias del proyecto
     
-    ```
+    `
     bash
     npm install
-    ```
+    `
 
 3- OPCIONAL: Si encuentra vulnerabilidades  te pide hacer un audit, sigue las instrucciones que te entrega npm por la consola.
-
-    ```
+    `
     bash
     npm audit
-    ```
+    `
 
-    ```
+    `
     bash
     npm audit fix
-    ```
+    `
 
 4- Crea el archivo .env y reemplaza la informacion con los datos de tu proyecto
-
-    ```
+    `
     .env
     DB_HOST=localhost
     DB_PORT=5432
     DB_USER=tu_usuario
     DB_PASSWORD=tu_contraseña
     DB_NAME=nombre_base_de_datos
-    ```
+    `
 
 5- Crea la base de datos en PgAdmin con el nombre "db_bootcamp". Se recomienda que tu usuario sea al Admin, en caso de PgAdmin 4 sería "postgres"
      
@@ -61,10 +57,10 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
 
 7- Inicializa el servidor para correr el CRUD completo.
 
-    ```
+    `
     node
     node server.js
-    ```
+    `
 
 ## Pasos para usar servidor con POSTMAN
 
@@ -77,7 +73,7 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
     **-BODY:**
     
     
-    ```
+    `
     {
             "firstName": "Mateo",
             "lastName": "Díaz",
@@ -102,7 +98,7 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
             "email": "facundo.fernandez@correo.com",
             "password": "facundo123456"
         }
-        ```
+        `
 
     
 
@@ -115,13 +111,13 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
 
     La consola de POSTMAN debería mostrar algo como:
 
-     ```
+     `
     {
         "id": 1,
         "email": "mateo.diaz@correo.com",
         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM3NDE3OTM4LCJleHAiOjE3Mzc1MDQzMzh9.hevWgRFrtuBQ71LkeM1Vh4-m_V1hLELL9FoPycQZltM"
     }
-    ```
+    `
 
 3- OBTENE UN USUARIO POR ID
 
@@ -149,7 +145,7 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
         -Key: x-access-token ---- Value: Aqui va el token que entrego el paso 2
     **-BODY:**
 
-    ```
+    `
     {
         "title": "Introduciendo El Bootcamp de React",
         "cue": 10,
@@ -165,7 +161,7 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
         "cue": 18,
         "description": "Domina Data Science todo el ecosistema de lenguajes y herramientas de Big Data e integrarlos con modelos avanzados de Artificial Intelligence y Machine Learning"
     }
-    ```
+    `
 
 6- AGREGAR USUARIOS AL BOOTCAMP
 
@@ -176,7 +172,7 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
         -Key: x-access-token ---- Value: Aqui va el token que entrego el paso 2
     **-BODY:**
 
-    ```
+    `
     {
         "bootcamp_id": 1,
         "user_id": 1
@@ -201,7 +197,7 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
         "bootcamp_id": 3,
         "user_id": 3
     }
-    ```
+    `
 
 7- OBTENER UN BOOTCAMP POR ID CON LOS USUARIOS ASOCIADOS A EL
 
@@ -229,12 +225,12 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
         -Key: x-access-token ---- Value: Aqui va el token que entrego el paso 2
     **-BODY:**
     
-    ```
+    `
     {
         "firstName": "Pedro",
         "lastName": "Sánchez"
     }
-    ```
+    `
 
 10- ELIMINAR UN USUARIO POR ID
 
@@ -246,9 +242,9 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
         -Key: x-access-token ---- Value: Aqui va el token que entrego el paso 2
     **-BODY:**
     
-    ```
+    `
     {
         "firstName": "Pedro",
         "lastName": "Sánchez"
     }
-    ```
+    `
