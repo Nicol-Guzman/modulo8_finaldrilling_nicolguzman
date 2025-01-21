@@ -30,10 +30,12 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
 
 3. OPCIONAL: Si encuentra vulnerabilidades  te pide hacer un audit, sigue las instrucciones que te entrega npm por la consola.
     ```bash
-    npm audit```
+    npm audit
+    ```
 
     ```bash
-    npm audit fix```
+    npm audit fix
+    ```
 
 4. Crea el archivo .env y reemplaza la informacion con los datos de tu proyecto
     ```.env
@@ -41,7 +43,8 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
     DB_PORT=5432
     DB_USER=tu_usuario
     DB_PASSWORD=tu_contraseña
-    DB_NAME=nombre_base_de_datos```
+    DB_NAME=nombre_base_de_datos
+    ```
 
 5. Crea la base de datos en PgAdmin con el nombre "db_bootcamp". Se recomienda que tu usuario sea al Admin, en caso de PgAdmin 4 sería "postgres"
      
@@ -50,7 +53,8 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
 7. Inicializa el servidor para iteractuar con el con POSTMAN.
 
     ```node
-    node server.js```
+    node server.js
+    ```
 
 ## Pasos para usar servidor con POSTMAN
 
@@ -86,7 +90,8 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
             "lastName": "Fernández",
             "email": "facundo.fernandez@correo.com",
             "password": "facundo123456"
-        }```
+        }
+        ```
 
 2. INICIAR SESION
 
@@ -101,7 +106,8 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
         "id": 1,
         "email": "mateo.diaz@correo.com",
         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM3NDE3OTM4LCJleHAiOjE3Mzc1MDQzMzh9.hevWgRFrtuBQ71LkeM1Vh4-m_V1hLELL9FoPycQZltM"
-    }```
+    }
+    ```
 
 3. OBTENE UN USUARIO POR ID
 
@@ -142,7 +148,8 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
         "title": "Bootcamp Big Data, Inteligencia Artificial & Machine Learning",
         "cue": 18,
         "description": "Domina Data Science todo el ecosistema de lenguajes y herramientas de Big Data e integrarlos con modelos avanzados de Artificial Intelligence y Machine Learning"
-    }```
+    }
+    ```
 
 6. AGREGAR USUARIOS AL BOOTCAMP
 
@@ -176,7 +183,8 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
     {
         "bootcamp_id": 3,
         "user_id": 3
-    }```
+    }
+    ```
 
 7. OBTENER UN BOOTCAMP POR ID CON LOS USUARIOS ASOCIADOS A EL
 
@@ -222,4 +230,5 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
     ```{
         "firstName": "Pedro",
         "lastName": "Sánchez"
-    }```
+    }
+    ```
