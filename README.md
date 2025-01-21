@@ -21,7 +21,8 @@ Se ha utilizado Node.js para levantarlo, haciendo uso de modulos como Sequelize 
    
    ```bash
    git clone https://github.com/Nicol-Guzman/modulo7_finaldrilling_nicolguzman.git
-   cd modulo7_finaldrilling_nicolguzman```
+   cd modulo7_finaldrilling_nicolguzman
+   ```
 
 2. Instala las dependencias del proyecto
     
